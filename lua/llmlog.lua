@@ -250,7 +250,7 @@ end
 
 -- Replace entire file with clipboard contents
 function M.replace_with_clipboard()
-  vim.cmd('ggdG"+P')
+  vim.cmd([[normal! ggdG"+P]])
   vim.notify("File replaced with clipboard contents", vim.log.levels.INFO)
 end
 
